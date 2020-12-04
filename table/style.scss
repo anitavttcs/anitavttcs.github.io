@@ -1,0 +1,108 @@
+@import 'colors';
+
+// div, p {
+    // border: 1px solid white;
+// }
+
+.page-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#carte {
+    // position: relative;
+    // left: calc(50% - 2em);
+    // width: 4em;
+    height: 1.4em;
+    text-align: center;
+    font-family: "La Belle Aurore";
+    font-size: 5em;
+    background-color: $transp-black;
+    // border-radius: 2em;
+    // opacity: .2;
+}
+
+.pizza-menu-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 70em;
+    margin: auto;
+    //background-color: $transp-black;
+    padding-bottom: 1em;
+}
+
+.menu-item {
+    display: flex;
+    text-align: center;
+    // flex-basis: 22em;
+    // max-width: 35em;
+    // min-width: 18em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em $bg-brown;
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    img {
+        width: 15em;
+    }
+    
+    .menu-item-text {
+        width: 15em;
+        // background-color: $bg-brown;
+        background-image: linear-gradient(to top, $bg-brown, $lt_brown);
+        color: $lt-brown;
+        opacity: 0.85;
+        
+                
+        &:hover {
+            opacity: 1;
+        }
+
+        p:first-child {
+            font-weight: 900;
+            font-size: 1.7em;
+            color: $bg-brown;
+        }
+        p:nth-child(2) {
+            font-style: italic;
+            color: black;
+        }
+        p:last-child {
+            font-weight: 500;
+        }
+        p {
+            margin: 1em;
+        }
+    }
+}
+
+.reservation {
+    width: min-content;
+    // min-height: 4em;
+    margin: 4em auto 3em;
+    // display: flex;
+
+    input[type="submit"]{
+        padding: .5em 1.5em;
+        background-color: $bg-brown;
+        color: $lt-brown;
+        font-family: 'Roboto Slab';
+        font-size: 20px;
+        border-radius: .66em;
+        // border: 4px solid #fff0;
+        transition: all .2s ease-in-out;
+
+        &:hover{
+            // border: 4px solid #fff6;
+            background-color: $lt-brown;
+            color: $bg-brown;
+        }
+    }
+    
+    
+}
+
